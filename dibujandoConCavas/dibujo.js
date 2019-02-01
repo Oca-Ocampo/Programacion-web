@@ -26,12 +26,20 @@ for(l= 0; l < lineas ; l++){
 }
 
 
-dibujarLinea("#AAF", 1, 1, 300, 1);
-dibujarLinea("#AAF", 299, 1, 299, 299);
+dibujarLinea("#000", 1, 1, 300, 1);
+dibujarLinea("#000", 299, 1, 299, 299);
 
 for(l = 0; l < 300; l++){
-	
-	dibujarLinea("#000", 150, 150, xf, yf);
+	yi = 300 - (10 * l);
+	xf = 10 * (l + 1);
+	dibujarLinea("#000", 1, yi, xf, 1);
+}
+
+
+for(l = 0; l < 300; l++){
+	xi = 10 * l;
+	yf = 300 - (10 * (l + 1));
+	dibujarLinea("#000", xi, 299, 299, yf);
 }
 
 
